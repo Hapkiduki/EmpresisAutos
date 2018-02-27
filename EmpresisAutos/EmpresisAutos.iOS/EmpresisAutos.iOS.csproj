@@ -156,9 +156,9 @@
     <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\logocar.png" />
+    <BundleResource Include="Resources\ic_remove_red_eye.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_remove_red_eye.png" />
+    <BundleResource Include="Resources\logocar.png" />
   </ItemGroup>
 </Project>

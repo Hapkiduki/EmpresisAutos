@@ -2,14 +2,31 @@
 {
     using EmpresisAutos.Views;
     using GalaSoft.MvvmLight.Command;
-    using ViewModels;
     using System.Windows.Input;
     using Xamarin.Forms;
 
-    public class HomeViewModel
+    public class HomeViewModel : BaseViewModel
     {
-        #region Properties
+        #region Attributes
+        private string placa;
+        #endregion
 
+        #region Properties
+        public string Placa
+        {
+            get { return this.placa; }
+            set
+            {
+                SetValue(ref this.placa, value);
+            }
+        }
+        #endregion
+
+        #region Constructors
+        public HomeViewModel()
+        {
+            this.Placa = "123";
+        }
         #endregion
 
         #region Commands
@@ -23,9 +40,17 @@
 
         private async void Home()
         {
-            
-           // await Application.Current.MainPage.DisplayAlert("entra", "Todo nice", "ok");
-            
+            if (string.IsNullOrEmpty(this.Placa))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    "Debe ingresar una placa.",
+                    "Aceptar");
+                return;
+            }
+
+            // await Application.Current.MainPage.DisplayAlert("entra", "Todo nice", "ok");
+
             MainViewModel.GetInstance().Plaques = new PlaquesViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new MenuPage());
 

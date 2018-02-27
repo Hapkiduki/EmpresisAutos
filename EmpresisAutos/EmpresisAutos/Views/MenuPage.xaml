@@ -7,6 +7,7 @@
              BarBackgroundColor="{StaticResource MainColor}"           
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <TabbedPage.Children>
+        <tabs:WelcomePage/>
         <tabs:HistoriesPage/>
         <tabs:PlacasPage/>
     </TabbedPage.Children>

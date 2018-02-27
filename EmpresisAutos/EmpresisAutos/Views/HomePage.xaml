@@ -73,17 +73,14 @@
                     HorizontalOptions="Center"/>
 
                 <Entry
-                     Grid.Row="2"
-                     Placeholder="Número de documento"
-                     PlaceholderColor="#FC0F3B"/>
-
-                <Entry
-                    Grid.Row="3"
+                    Grid.Row="2"
+                    Text="{Binding Placa, Mode=TwoWay}"
                     Placeholder="Número de placa"
                     PlaceholderColor="#FC0F3B"/>
 
                 <Button
-                    Grid.Row="4"
+                    Grid.Row="3"
+                    Grid.RowSpan="2"
                     BackgroundColor="#FC0F3B"
                     Command="{Binding HomeCommand}"
                     TextColor="White"
