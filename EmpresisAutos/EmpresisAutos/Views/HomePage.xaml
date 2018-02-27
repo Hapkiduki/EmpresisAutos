@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmpresisAutos.Views.HomePage"
+             BackgroundColor="Azure"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        
+            <Grid
+            RowSpacing="0"
+            ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image
+                Aspect="Fill"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                Grid.RowSpan="3"
+                Source="fondo"
+                />
+                <Image
+                Aspect="Fill"
+                Grid.Column="1"
+                Grid.Row="0"
+                Source="logocar"/>
+                <Image
+                Aspect="Fill"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Source="fondoblack"/>
+            <ScrollView
+                BindingContext="{Binding Home}"
+                 Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="2"
+                    Grid.RowSpan="2">
+            <Grid
+                    Padding="10"
+                    RowSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label
+                     Grid.Row="0"
+                     Text="BIENVENIDO A CARLLANTAS"
+                     TextColor="Black"
+                     FontSize="Large"
+                     VerticalOptions="End"
+                     HorizontalOptions="Center"/>
+
+                <Label
+                    Grid.Row="1"
+                    Text="Consulte su vehículo"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"/>
+
+                <Entry
+                     Grid.Row="2"
+                     Placeholder="Número de documento"
+                     PlaceholderColor="#FC0F3B"/>
+
+                <Entry
+                    Grid.Row="3"
+                    Placeholder="Número de placa"
+                    PlaceholderColor="#FC0F3B"/>
+
+                <Button
+                    Grid.Row="4"
+                    BackgroundColor="#FC0F3B"
+                    Command="{Binding HomeCommand}"
+                    TextColor="White"
+                    Text="Consultar"/>
+
+            </Grid>
+            </ScrollView>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
