@@ -5,23 +5,23 @@
              BackgroundColor="Azure"
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        
-            <Grid
+
+        <Grid
             RowSpacing="0"
             ColumnSpacing="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <Image
+            <Image
                 Aspect="Fill"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
@@ -29,12 +29,12 @@
                 Grid.RowSpan="3"
                 Source="fondo"
                 />
-                <Image
+            <Image
                 Aspect="Fill"
                 Grid.Column="1"
                 Grid.Row="0"
                 Source="logocar"/>
-                <Image
+            <Image
                 Aspect="Fill"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
@@ -47,18 +47,18 @@
                     Grid.ColumnSpan="3"
                     Grid.Row="2"
                     Grid.RowSpan="2">
-            <Grid
+                <Grid
                     Padding="10"
                     RowSpacing="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
 
-                <Label
+                    <Label
                      Grid.Row="0"
                      Text="BIENVENIDO A CARLLANTAS"
                      TextColor="Black"
@@ -66,30 +66,39 @@
                      VerticalOptions="End"
                      HorizontalOptions="Center"/>
 
-                <Label
+                    <Label
                     Grid.Row="1"
                     Text="Consulte su vehículo"
                     FontSize="Medium"
                     HorizontalOptions="Center"/>
 
-                <Entry
+                    <Entry
                     Grid.Row="2"
                     Text="{Binding Placa, Mode=TwoWay}"
                     Placeholder="Número de placa"
                     PlaceholderColor="#FC0F3B"/>
 
-                <Button
-                    Grid.Row="3"
-                    Grid.RowSpan="2"
+                    <ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="CenterAndExpand">
+                    </ActivityIndicator>
+
+                    <Button
+                    Grid.Row="4"
                     BackgroundColor="#FC0F3B"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    HorizontalOptions="FillAndExpand"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                     Command="{Binding HomeCommand}"
                     TextColor="White"
-                    Text="Consultar"/>
+                    Text="Consultar"
+                    VerticalOptions="EndAndExpand"/>
 
-            </Grid>
+                </Grid>
             </ScrollView>
 
         </Grid>
-        
+
     </ContentPage.Content>
 </ContentPage>

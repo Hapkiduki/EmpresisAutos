@@ -7,7 +7,7 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <StackLayout
-            BindingContext="{Binding Plaque}"
+            BindingContext="{Binding Welcome}"
             Padding="5">
             <Label Text="Placas m!"
                 VerticalOptions="CenterAndExpand" 
@@ -33,7 +33,7 @@
                                             TextColor="Black">
                                         </Label>
                                         <Label 
-                                            Text="{Binding Total, StringFormat='{0:C2}'}"
+                                            Text="{Binding Valtotal, StringFormat='{0:C2}'}"
                                             TextColor="Black">
                                         </Label>
                                     </StackLayout>

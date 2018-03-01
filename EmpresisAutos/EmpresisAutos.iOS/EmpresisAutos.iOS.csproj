@@ -161,4 +161,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\logocar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_account_circle.png" />
+  </ItemGroup>
 </Project>

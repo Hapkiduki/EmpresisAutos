@@ -7,6 +7,8 @@
     {
         #region Properties
         public List<Plaque> PlaquesList { get; set; }
+
+        public Plaque PlaqueList { get; set; }
         #endregion
 
         #region ViewModels
@@ -27,6 +29,13 @@
             get;
             set;
         }
+
+        public WelcomeViewModel Welcome
+        {
+            get;
+            set;
+        }
+
         #endregion
 
         #region Constructors

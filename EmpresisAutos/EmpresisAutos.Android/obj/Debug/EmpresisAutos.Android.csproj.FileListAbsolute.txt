@@ -169,6 +169,10 @@ E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\ic_action_account_circle.png
+E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable-hdpi\ic_action_account_circle.png
+E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable-xhdpi\ic_action_account_circle.png
+E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable-xxhdpi\ic_action_account_circle.png
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\bin\Debug\EmpresisAutos.Android.dll
 bin\Debug\FormsViewGroup.dll.mdb
 bin\Debug\GalaSoft.MvvmLight.dll.mdb

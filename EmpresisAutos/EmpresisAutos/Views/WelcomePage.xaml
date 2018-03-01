@@ -2,13 +2,90 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EmpresisAutos.Views.WelcomePage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Icon="ic_action_account_circle"
+             Title="Cliente">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenido!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView
+            BindingContext="{Binding Welcome}">
+            <StackLayout
+                Padding="10">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Text="Bienvenido"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Large"
+                    Text="{Binding Plaque.Nombrecli}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Default"
+                    Text="Vehículo"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Vehiculo}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Colorv}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Default"
+                    Text="Placa"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Placa}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Default"
+                    Text="Última Revisión"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Fecha, StringFormat='{0:MMMM d, yyyy}'}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Default"
+                    Text="Modelo"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Modelo}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Default"
+                    Text="Kilómetros Recorridos"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    FontSize="Medium"
+                    Text="{Binding Plaque.Kilometros, StringFormat='{0} Km'}"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+                
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
