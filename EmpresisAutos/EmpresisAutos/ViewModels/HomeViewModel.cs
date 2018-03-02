@@ -91,7 +91,7 @@
             if (!connection.IsSuccess)
             {
                 this.IsRunning = false;
-                this.isEnabled = true;
+                this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
                     connection.Message,
@@ -107,7 +107,7 @@
             if (!response.IsSuccess)
             {
                 this.IsRunning = false;
-                this.isEnabled = true;
+                this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
                     response.Message,

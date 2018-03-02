@@ -47,3 +47,4 @@ E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos\obj\Debug\netstandard2.0\E
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos\obj\Debug\netstandard2.0\EmpresisAutos.AssemblyInfo.cs
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos\obj\Debug\netstandard2.0\EmpresisAutos.dll
 E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos\obj\Debug\netstandard2.0\EmpresisAutos.pdb
+E:\Personal\EmpresisAutos\EmpresisAutos\EmpresisAutos\obj\Debug\netstandard2.0\EmpresisAutos.Views.ManteinancePage.xaml.g.cs
