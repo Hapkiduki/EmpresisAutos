@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Debug\lp\2\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\13\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\lp\12\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\lp\13\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\lp\14\jl\bin\classes.jar</Jar>

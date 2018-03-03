@@ -8,7 +8,8 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <application android:label="EmpresisAutos.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/ic_launcher" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/ic_launcher" android:label="Empresis Autos" android:theme="@style/MainTheme" android:name="md58ebe2ba3289df01f773715bd1f545aa8.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/ic_launcher" android:label="Empresis Autos" android:theme="@style/MainTheme" android:name="md58ebe2ba3289df01f773715bd1f545aa8.MainActivity" />
+    <activity android:label="Empresis Autos" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md58ebe2ba3289df01f773715bd1f545aa8.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

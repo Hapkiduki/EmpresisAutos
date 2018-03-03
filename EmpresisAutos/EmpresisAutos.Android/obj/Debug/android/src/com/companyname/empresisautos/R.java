@@ -3665,6 +3665,7 @@ containing a value of this type.
         public static final int Theme_MediaRouter_Light=0x7f0b0004;
         public static final int Theme_MediaRouter_Light_DarkControlPanel=0x7f0b0005;
         public static final int Theme_MediaRouter_LightControlPanel=0x7f0b0006;
+        public static final int Theme_Splash=0x7f0b018c;
         public static final int ThemeOverlay_AppCompat=0x7f0b011f;
         public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0b0120;
         public static final int ThemeOverlay_AppCompat_Dark=0x7f0b0121;
