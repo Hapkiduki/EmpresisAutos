@@ -7,7 +7,7 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <ScrollView
-            BindingContext="{Binding Welcome}">
+            BindingContext="{Binding Manteinance}">
             <StackLayout 
                 Padding="5">
                 <Label 

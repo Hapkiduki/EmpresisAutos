@@ -11,7 +11,8 @@
 namespace EmpresisAutos {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAu" +
+        "tos\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -1477,24 +1477,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TICS-PC002\\.nuget\\packages\\": {},
+    "C:\\Users\\Hapkiduki\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\EmpresisAutos.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\EmpresisAutos.iOS.csproj",
       "projectName": "EmpresisAutos.iOS",
-      "projectPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\EmpresisAutos.iOS.csproj",
-      "packagesPath": "C:\\Users\\TICS-PC002\\.nuget\\packages\\",
-      "outputPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\EmpresisAutos.iOS.csproj",
+      "packagesPath": "C:\\Users\\Hapkiduki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\TICS-PC002\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hapkiduki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -1508,8 +1508,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj": {
-              "projectPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj"
+            "C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj": {
+              "projectPath": "C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj"
             }
           }
         }

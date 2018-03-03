@@ -11,7 +11,8 @@
 namespace EmpresisAutos.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\Views\\HomePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hapkiduki\\Videos\\Trabajos\\Ingesis\\EmpresisAutos\\EmpresisAutos\\EmpresisAu" +
+        "tos\\Views\\HomePage.xaml")]
     public partial class HomePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -1,18 +1,18 @@
 ﻿namespace EmpresisAutos.ViewModels
 {
+    using GalaSoft.MvvmLight.Command;
     using Models;
-    using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
+    using System.Windows.Input;
 
     public class WelcomeViewModel : BaseViewModel
     {
         #region Attributes
         private Plaque plaque;
-        private ObservableCollection<MovItem> items;
-        private ObservableCollection<MovItem> item_first;
+        private ObservableCollection<MovItemViewModel> items;
+        private string filter;
         #endregion
 
         #region Properties
@@ -25,16 +25,21 @@
             }
         }
 
-        public ObservableCollection<MovItem> Items
+        public ObservableCollection<MovItemViewModel> Items
         {
             get { return this.items; }
             set { this.SetValue(ref this.items, value); }
         }
+        
 
-        public ObservableCollection<MovItem> Item_first
+        public string Filter
         {
-            get { return this.item_first; }
-            set { this.SetValue(ref this.item_first, value); }
+            get { return this.filter; }
+            set
+            {
+                SetValue(ref this.filter, value);
+                this.Search();
+            }
         }
         #endregion
 
@@ -42,23 +47,71 @@
         public WelcomeViewModel()
         {
             this.Plaque = MainViewModel.GetInstance().PlaqueList;
-            
-            List<MovItem> datos = this.plaque.MovItems
-                 .GroupBy(i => i.Orden)
-                 .Select(mi => mi.First())
-                 .ToList();
-            var indicador = this.plaque.MovItems.GroupBy(i => i.Orden).ToList();
-            var otro = indicador[0];
-        
-            this.Item_first = new ObservableCollection<MovItem>(otro);
-            this.Items = new ObservableCollection<MovItem>(datos);
+            this.Items = new ObservableCollection<MovItemViewModel>(this.GetDatos());
 
 
         }
+
+
         #endregion
 
         #region Methods
 
+        private IEnumerable<MovItemViewModel> GetDatos()
+        {
+            return MainViewModel.GetInstance().PlaqueList.MovItems
+                  .GroupBy(i => i.Orden)
+                  .Select(mi => new MovItemViewModel
+                  {
+                      Numfactu = mi.First().Numfactu,
+                      FechaEnt = mi.First().FechaEnt,
+                      Cantidad = mi.First().Cantidad,
+                      Dcto = mi.First().Dcto,
+                      Estado = mi.First().Estado,
+                      Iva = mi.First().Iva,
+                      Nameref = mi.First().Nameref,
+                      Observa = mi.First().Observa,
+                      Orden = mi.First().Orden,
+                      Referencia = mi.First().Referencia,
+                      Tasaiva = mi.First().Tasaiva,
+                      Tdes1 = mi.First().Tdes1,
+                      Total = mi.First().Total,
+                      Valdes = mi.First().Valdes,
+                      Valiva = mi.First().Valiva,
+                      Valor = mi.First().Valor,
+                      Valsubtot = mi.First().Valsubtot,
+                      Valtotal = mi.First().Valtotal
+                  })
+                  .ToList();
+        }
+
+        private async void Search()
+        {
+            if (string.IsNullOrEmpty(this.Filter))
+            {
+                this.Items = new ObservableCollection<MovItemViewModel>(
+                    this.GetDatos());
+
+            }
+            else
+            {
+                this.Items = new ObservableCollection<MovItemViewModel>(
+                    this.GetDatos().Where(
+                        i => i.Numfactu.ToLower().Contains(this.Filter.ToLower())
+                        || i.FechaEnt.ToString().Contains(string.Format("{0:s}", this.Filter))));
+
+            }
+        }
+        #endregion
+
+        #region Commands
+        public ICommand SearchCommand
+        {
+            get
+            {
+                return new RelayCommand(Search);
+            }
+        }
 
         #endregion
     }

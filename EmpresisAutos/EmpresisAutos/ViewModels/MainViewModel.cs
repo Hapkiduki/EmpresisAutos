@@ -36,6 +36,12 @@
             set;
         }
 
+        public ManteinanceViewModel Manteinance
+        {
+            get;
+            set;
+        }
+
         #endregion
 
         #region Constructors

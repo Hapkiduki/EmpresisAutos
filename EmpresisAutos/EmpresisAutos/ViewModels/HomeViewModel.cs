@@ -123,6 +123,8 @@
             this.IsEnabled = true;
             //MainViewModel.GetInstance().Plaques = new PlaquesViewModel();
             MainViewModel.GetInstance().Welcome = new WelcomeViewModel();
+            MainViewModel.GetInstance().Manteinance = new ManteinanceViewModel();
+
             await Application.Current.MainPage.Navigation.PushAsync(new MenuPage());
         }
 

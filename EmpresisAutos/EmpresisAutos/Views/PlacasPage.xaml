@@ -9,16 +9,28 @@
         <StackLayout
             BindingContext="{Binding Welcome}"
             Padding="5">
-            <Label Text="Placas m!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <SearchBar
+                BackgroundColor="AntiqueWhite"
+                Text="{Binding Filter, Mode=TwoWay}"
+                Placeholder="Buscar..."
+                SearchCommand="{Binding SearchCommand}">
+            </SearchBar>
             <ListView 
                 HasUnevenRows="true" 
-                ItemsSource="{Binding Items}">
+                ItemsSource="{Binding Items}"
+                SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
+                            <Frame
+                                CornerRadius="20"
+                                HasShadow="true"
+                                Margin="5">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SelectItemCommand}"/>
+                                </Frame.GestureRecognizers>
+
+                                <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="3*"/>
@@ -36,6 +48,10 @@
                                             Text="{Binding Valtotal, StringFormat='{0:C2}'}"
                                             TextColor="Black">
                                         </Label>
+                                        <Label 
+                                            Text="{Binding FechaEnt, StringFormat='{0:MMMM d, yyyy}'}"
+                                            TextColor="Black">
+                                        </Label>
                                     </StackLayout>
                                     <Image 
                                         Grid.Column="1"
@@ -43,7 +59,7 @@
                                         Source="ic_remove_red_eye">
                                     </Image>
                                 </Grid>
-                            
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
