@@ -134,7 +134,6 @@ C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisA
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\layout\tabbar.xml
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\layout\toolbar.xml
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\values\styles.xml
-C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\fondo.jpg
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\fondoblack.png
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\ic_action_build.png
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\ic_action_directions_car.png
@@ -177,6 +176,8 @@ C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisA
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\fondo.png
+C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\obj\Debug\res\drawable\fondosplash.png
 C:\Users\Hapkiduki\Videos\Trabajos\Ingesis\EmpresisAutos\EmpresisAutos\EmpresisAutos.Android\bin\Debug\EmpresisAutos.Android.dll
 bin\Debug\FormsViewGroup.dll.mdb
 bin\Debug\GalaSoft.MvvmLight.dll.mdb

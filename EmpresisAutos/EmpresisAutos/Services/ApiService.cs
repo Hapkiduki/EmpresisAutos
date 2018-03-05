@@ -181,6 +181,16 @@
                     };
                 }
 
+                var reg = JsonConvert.SerializeObject(result);
+                if (reg.Contains("[]"))
+                {
+                    return new Response
+                    {
+                        IsSuccess = false,
+                        Message = "No hay registros asociados a esta placa",
+                    };
+                }
+
                 var list = JsonConvert.DeserializeObject<List<T>>(result);
                 return new Response
                 {

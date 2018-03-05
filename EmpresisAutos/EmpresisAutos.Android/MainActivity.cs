@@ -1,15 +1,10 @@
-﻿using System;
-
-using Android.App;
-using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-
-namespace EmpresisAutos.Droid
+﻿namespace EmpresisAutos.Droid
 {
-    [Activity(Label = "Empresis Autos",
+    using Android.App;
+    using Android.Content.PM;
+    using Android.OS;
+
+    [Activity(Label = "EmpreSis Carllantas",
         Icon = "@drawable/ic_launcher", 
         Theme = "@style/MainTheme",
         //MainLauncher = true,

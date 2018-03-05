@@ -100,9 +100,9 @@
             }
             // http://200.116.0.43:8090
             var response = await this.apiService.GetList<Plaque>(
-                "http://200.116.0.43:8090",
+                "http://190.128.24.79:8090",
                 "/WS_Empresis.asmx",
-                "/GetPlacas");
+                string.Format("/GetPlacas?placa={0}", this.Placa));
 
             if (!response.IsSuccess)
             {

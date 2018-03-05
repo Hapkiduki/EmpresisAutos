@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabs="clr-namespace:EmpresisAutos.Views"
              x:Class="EmpresisAutos.Views.MenuPage"
-             Title="Empresis Autos"
+             Title="EmpreSis Carllantas"
              BarBackgroundColor="{StaticResource MainColor}"           
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <TabbedPage.Children>

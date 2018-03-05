@@ -97,22 +97,22 @@
                                             Grid.Column="1"
                                             FontSize="Small"
                                             HorizontalTextAlignment="End"
-                                            Text="{Binding Cantidad, StringFormat='{0:N2}'}"/>
+                                            Text="{Binding Cantidad, StringFormat='{0:N0}'}"/>
                                         <Label
                                             Grid.Column="2"
                                             FontSize="Small"
                                             HorizontalTextAlignment="End"
-                                            Text="{Binding Valor, StringFormat='{0:C2}'}"/>
+                                            Text="{Binding Valor, StringFormat='{0:C0}'}"/>
                                         <Label
                                             Grid.Column="3"
                                             FontSize="Small"
                                             HorizontalTextAlignment="End"
-                                            Text="{Binding Iva, StringFormat='{0:C2}'}"/>
+                                            Text="{Binding Iva, StringFormat='{0:C0}'}"/>
                                         <Label
                                             Grid.Column="4"
                                             FontSize="Small"
                                             HorizontalTextAlignment="End"
-                                            Text="{Binding Total, StringFormat='{0:C2}'}"/>
+                                            Text="{Binding Total, StringFormat='{0:C0}'}"/>
                                     </Grid>
                                 </ViewCell>
                             </DataTemplate>
