@@ -8,7 +8,7 @@
     {
         #region Attributes
         private ObservableCollection<MovItem> item_first;
-        private ManteinanceViewModel data;
+        //private ManteinanceViewModel data;
         #endregion
 
         #region Properties

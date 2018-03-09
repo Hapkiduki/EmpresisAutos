@@ -1,6 +1,4 @@
-﻿
-
-namespace EmpresisAutos.Droid
+﻿namespace EmpresisAutos.Droid
 {
 
     using Android.App;
@@ -19,4 +17,6 @@ namespace EmpresisAutos.Droid
             this.StartActivity(typeof(MainActivity));
         }
     }
+
+
 }

@@ -46,7 +46,7 @@
         #region Constructors
         public HomeViewModel()
         {
-            this.Placa = "AAA-999";
+           
             this.IsEnabled = true;
         }
         #endregion
@@ -121,6 +121,7 @@
             //    this.ToPlaqueItemViewModel());
             this.IsRunning = false;
             this.IsEnabled = true;
+            this.Placa = string.Empty;
             //MainViewModel.GetInstance().Plaques = new PlaquesViewModel();
             MainViewModel.GetInstance().Welcome = new WelcomeViewModel();
             MainViewModel.GetInstance().Manteinance = new ManteinanceViewModel();

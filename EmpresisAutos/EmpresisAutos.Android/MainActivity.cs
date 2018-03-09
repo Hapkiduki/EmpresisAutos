@@ -5,7 +5,7 @@
     using Android.OS;
 
     [Activity(Label = "EmpreSis Carllantas",
-        Icon = "@drawable/ic_launcher", 
+        Icon = "@drawable/ic_launcher",
         Theme = "@style/MainTheme",
         //MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -19,9 +19,8 @@
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            
+
             LoadApplication(new App());
         }
     }
 }
-

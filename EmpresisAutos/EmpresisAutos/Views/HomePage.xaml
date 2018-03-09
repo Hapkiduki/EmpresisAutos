@@ -79,6 +79,7 @@
                     PlaceholderColor="#FC0F3B"/>
 
                     <ActivityIndicator
+                        Color="Red"
                     IsRunning="{Binding IsRunning, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand">
                     </ActivityIndicator>

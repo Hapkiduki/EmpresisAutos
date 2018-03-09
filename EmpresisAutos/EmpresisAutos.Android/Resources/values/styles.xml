@@ -28,8 +28,9 @@
     <item name="colorAccent">#FC0F3B</item>
   </style>
 
-  <style name="Theme.Splash" parent="android:Theme">
-        <item name="android:windowBackground">@drawable/fondosplash</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
+  <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
 </resources>
