@@ -124,10 +124,15 @@
                     FontSize="Medium"
                     HorizontalTextAlignment="Center"
                     Text="Costo Final"/>
-                <Label 
+                <!--<Label
                     FontSize="Large"
                     HorizontalOptions="Center"
                     Text="{Binding Item_first[0].Valtotal, StringFormat='{0:C2}'}"
+                    TextColor="Red"/>-->
+                <Label
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="{Binding Sumtotal, StringFormat='{0:C2}'}"
                     TextColor="Red"/>
             </StackLayout>
         </ScrollView>

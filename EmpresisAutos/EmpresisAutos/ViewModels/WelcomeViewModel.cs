@@ -2,6 +2,7 @@
 {
     using GalaSoft.MvvmLight.Command;
     using Models;
+    using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
@@ -80,9 +81,20 @@
                       Valiva = mi.First().Valiva,
                       Valor = mi.First().Valor,
                       Valsubtot = mi.First().Valsubtot,
-                      Valtotal = mi.First().Valtotal
+                      Valtotal = this.SumTotal(this.Plaque.MovItems.Where(x => x.Orden == mi.First().Orden))
                   })
                   .ToList();
+        }
+
+        private int SumTotal(IEnumerable<MovItem> items)
+        {
+            var total = 0;
+            foreach (var item in items)
+            {
+                total += item.Total;
+            }
+
+            return total;
         }
 
         private async void Search()
