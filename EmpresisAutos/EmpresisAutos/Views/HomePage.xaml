@@ -74,8 +74,14 @@
 
                     <Entry
                     Grid.Row="2"
+                    Text="{Binding Cedula, Mode=TwoWay}"
+                    Placeholder="Digite Número Cédula"
+                    PlaceholderColor="#FC0F3B"/>
+
+                    <Entry
+                    Grid.Row="3"
                     Text="{Binding Placa, Mode=TwoWay}"
-                    Placeholder="Número de placa"
+                    Placeholder="Digite Placa así AAA-999"
                     PlaceholderColor="#FC0F3B"/>
 
                     <ActivityIndicator

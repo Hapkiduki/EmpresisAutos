@@ -16,6 +16,7 @@
 
         #region Attributes
         private string placa;
+        private string cedula;
         private bool isRunning;
         private bool isEnabled;
         #endregion
@@ -26,7 +27,16 @@
             get { return this.placa; }
             set
             {
-                SetValue(ref this.placa, value);
+                SetValue(ref this.placa, value.ToUpper());
+            }
+        }
+
+        public string Cedula
+        {
+            get { return this.cedula; }
+            set
+            {
+                SetValue(ref this.cedula, value.ToUpper());
             }
         }
 
@@ -70,7 +80,16 @@
                     "Aceptar");
                 return;
             }
-            
+
+            if (string.IsNullOrEmpty(this.Cedula))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    "Debe ingresar una cédula.",
+                    "Aceptar");
+                return;
+            }
+
             this.apiService = new ApiService();
             this.LoadPlaques();
             // await Application.Current.MainPage.DisplayAlert("entra", "Todo nice", "ok");
@@ -102,7 +121,7 @@
             var response = await this.apiService.GetList<Plaque>(
                 "http://190.128.24.79:8090",
                 "/WS_Empresis.asmx",
-                string.Format("/GetPlacas?placa={0}", this.Placa));
+                string.Format("/GetPlacas?placa={0}&cedula={1}", this.Placa, this.Cedula));
 
             if (!response.IsSuccess)
             {

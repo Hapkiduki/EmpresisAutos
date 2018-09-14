@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v7.1": {
+    "MonoAndroid,Version=v8.1": {
       "CommonServiceLocator/2.0.2": {
         "type": "package",
         "compile": {
@@ -1181,7 +1181,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v7.1": [
+    "MonoAndroid,Version=v8.1": [
       "EmpresisAutos >= 1.0.0",
       "Microsoft.Net.Http >= 2.2.29",
       "MvvmLightLibs >= 5.4.1",
@@ -1196,46 +1196,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TICS-PC002\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\Hapkiduki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\EmpresisAutos.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\EmpresisAutos.Android.csproj",
       "projectName": "EmpresisAutos.Android",
-      "projectPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\EmpresisAutos.Android.csproj",
-      "packagesPath": "C:\\Users\\TICS-PC002\\.nuget\\packages\\",
-      "outputPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\obj\\",
+      "projectPath": "C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\EmpresisAutos.Android.csproj",
+      "packagesPath": "C:\\Users\\Hapkiduki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\TICS-PC002\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Hapkiduki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid71"
+        "monoandroid81"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://gallery.uipath.com/api/v2": {}
       },
       "frameworks": {
-        "monoandroid71": {
+        "monoandroid81": {
           "projectReferences": {
-            "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj": {
-              "projectPath": "E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj"
+            "C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj": {
+              "projectPath": "C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "monoandroid71": {
+      "monoandroid81": {
         "dependencies": {
           "Microsoft.Net.Http": {
             "target": "Package",

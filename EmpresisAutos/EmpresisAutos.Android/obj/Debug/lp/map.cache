@@ -1,5 +1,6 @@
-CommonServiceLocator
 EmpresisAutos
+System.Runtime
+CommonServiceLocator
 FormsViewGroup
 GalaSoft.MvvmLight
 GalaSoft.MvvmLight.Extras
@@ -9,7 +10,6 @@ Plugin.Connectivity.Abstractions
 Plugin.Connectivity
 System.Net.Http.Extensions
 System.Net.Http.Primitives
-System.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat

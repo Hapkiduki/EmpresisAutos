@@ -4,7 +4,7 @@
     using Android.App;
     using Android.OS;
 
-    [Activity(Label = "EmpreSis Carllantas",
+    [Activity(Label = "Carllantas y Servicios",
         Theme = "@style/Theme.Splash", //Indicates the theme to use for this activity
              MainLauncher = true, //Set it as boot activity
              NoHistory = true)] //Doesn't place it in back stack

@@ -11,7 +11,8 @@
 namespace EmpresisAutos.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Personal\\EmpresisAutos\\EmpresisAutos\\EmpresisAutos\\Views\\MenuPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Hapkiduki\\Videos\\Proyectos\\Trabajos\\INGESIS_APP\\EmpresisAutos\\EmpresisAu" +
+        "tos\\EmpresisAutos\\Views\\MenuPage.xaml")]
     public partial class MenuPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

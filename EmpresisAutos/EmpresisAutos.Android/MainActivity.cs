@@ -4,7 +4,7 @@
     using Android.Content.PM;
     using Android.OS;
 
-    [Activity(Label = "EmpreSis Carllantas",
+    [Activity(Label = "Carllantas y Servicios",
         Icon = "@drawable/ic_launcher",
         Theme = "@style/MainTheme",
         //MainLauncher = true,
